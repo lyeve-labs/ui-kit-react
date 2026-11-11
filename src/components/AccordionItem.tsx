@@ -19,7 +19,7 @@ export interface AccordionItemProps {
 export function AccordionItem({ id, title, name, className = '', children }: AccordionItemProps) {
   return (
     <details id={id} name={name} className={`bg-surface ${className}`}>
-      <summary className="flex w-full cursor-pointer list-none items-center justify-between px-5 py-4 text-start text-sm font-medium text-fg transition-colors hover:bg-surface-2/50 [[open]>&]:bg-surface-2/40 outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand [&::-webkit-details-marker]:hidden">
+      <summary className="flex w-full cursor-pointer list-none items-center justify-between px-5 py-4 text-start text-sm font-medium text-fg transition-colors hover:bg-surface-2/50 [[open]>&]:bg-surface-2/40 outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-focus [&::-webkit-details-marker]:hidden">
         <span>{title}</span>
         <ChevronDown
           size={16}

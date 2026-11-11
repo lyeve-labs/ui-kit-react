@@ -1,6 +1,6 @@
 minimumReleaseAgeStrict: true
 minimumReleaseAgeExclude:
   # The kit release the parity test holds these components to. It comes out once it passes the age check.
-  - '@lyeve-labs/ui-kit@0.56.0'
+  - '@lyeve-labs/ui-kit@0.60.1'
 allowBuilds:
   esbuild: true
