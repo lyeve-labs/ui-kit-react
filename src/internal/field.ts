@@ -10,26 +10,30 @@ export const FIELD_ERROR = 'text-xs text-danger';
 
 const CONTROL_DEPTH = 'inset-shadow-well';
 
-const CONTROL_FOCUS_RING = 'focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand/35';
+const CONTROL_FOCUS_RING = 'focus-visible:ring-1 focus-visible:ring-inset';
 
 export const CONTROL_BASE =
   'w-full h-control rounded-lg bg-surface-2 border px-3 text-sm text-fg ' +
   'placeholder:text-faint transition-colors outline-none ' +
-  `${CONTROL_DEPTH} ${CONTROL_FOCUS_RING} ` +
+  `${CONTROL_DEPTH} ` +
   'disabled:opacity-50 disabled:cursor-not-allowed';
 
 export const CONTROL_MULTILINE =
   'w-full min-h-control rounded-lg bg-surface-2 border px-3 py-2 text-sm text-fg ' +
   'placeholder:text-faint transition-colors outline-none ' +
-  `${CONTROL_DEPTH} ${CONTROL_FOCUS_RING} ` +
+  `${CONTROL_DEPTH} ` +
   'disabled:opacity-50 disabled:cursor-not-allowed';
 
 /**
- * The control's border. The kit also paints a suggested value from a form
- * assistant here, which a control rendered with no assistant never shows.
+ * The control's border. A field in error keeps its red border on focus, so a
+ * red ring inside it marks the focus. The kit also paints a suggested value
+ * from a form assistant here, which a control rendered with no assistant
+ * never shows.
  */
 export function controlBorder(error: boolean): string {
-  return error ? 'border-danger focus:border-danger' : 'border-line-strong focus:border-brand';
+  return error
+    ? `border-danger focus:border-danger ${CONTROL_FOCUS_RING} focus-visible:ring-danger`
+    : 'border-line hover:border-line-strong focus:border-focus';
 }
 
 /**

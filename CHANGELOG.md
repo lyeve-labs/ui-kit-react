@@ -10,7 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - React ports of twenty ui-kit components a page for visitors draws with,
-  each holding the markup of its Svelte original in ui-kit 0.56.0. Every one
+  each holding the markup of its Svelte original in ui-kit 0.60.1. Every one
   renders as a Server Component, and the package ships the kit's compiled
-  stylesheet as `site.css`.
+  stylesheet as `site.css`. A text field shows keyboard focus by its own 1px
+  border turning the focus color, and a field in error keeps its red border
+  with a 1px red ring inside it.
 

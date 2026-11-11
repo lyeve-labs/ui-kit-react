@@ -37,12 +37,11 @@ const variants: Record<Variant, string> = {
     `active:bg-brand-deep inset-shadow-bevel shadow-raised ${FILLED_EDGE}`,
   violet: `bg-violet text-ink hover:brightness-110 active:brightness-90 border border-transparent inset-shadow-bevel shadow-raised ${FILLED_EDGE}`,
   secondary:
-    'bg-surface-2 text-fg border border-line-strong hover:bg-line active:bg-line-strong/30 inset-shadow-highlight shadow-raised',
+    'bg-surface-2 text-fg border border-line hover:bg-line active:bg-line-strong/30 inset-shadow-highlight shadow-raised',
   danger: `bg-danger text-ink hover:brightness-110 active:brightness-90 border border-transparent inset-shadow-bevel shadow-raised ${FILLED_EDGE}`,
   ghost:
     'text-muted border border-transparent hover:bg-surface-2 hover:text-fg active:bg-line active:text-fg',
-  outline:
-    'border border-line-strong text-fg hover:border-brand hover:text-brand active:bg-brand/10',
+  outline: 'border border-line text-fg hover:border-brand hover:text-brand active:bg-brand/10',
 };
 
 const sizes: Record<Size, string> = {
