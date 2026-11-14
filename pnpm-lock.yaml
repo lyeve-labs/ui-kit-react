@@ -12,8 +12,8 @@ importers:
         specifier: 0.511.0
         version: 0.511.0(svelte@5.57.3)
       '@lyeve-labs/ui-kit':
-        specifier: 0.60.1
-        version: 0.60.1(@lucide/svelte@0.511.0(svelte@5.57.3))(svelte@5.57.3)(tailwindcss@4.3.5)
+        specifier: 0.61.0
+        version: 0.61.0(@lucide/svelte@0.511.0(svelte@5.57.3))(svelte@5.57.3)(tailwindcss@4.3.5)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.1.1
         version: 5.1.1(svelte@5.57.3)(vite@6.4.5(@types/node@26.6.6))
@@ -398,8 +398,8 @@ packages:
     peerDependencies:
       svelte: ^5
 
-  '@lyeve-labs/ui-kit@0.60.1':
-    resolution: {integrity: sha512-5rJtE1Peryns/qQpSpdb1Y116YV8IZJxSi0JGuf/JVh1Bf9UVGyNEPIEPPKz2vUOeffWDo6pMEBmatT0WEmwZg==}
+  '@lyeve-labs/ui-kit@0.61.0':
+    resolution: {integrity: sha512-3eqiLbPbxAV2THJ+Yltr+CxK3wMmXeH7x0kWQ6ZLGM6DSPH5VQv7ZzaaGkZ2jlvQb1l4a+reiAWZGLWDmh39ZQ==}
     engines: {node: '>=24'}
     peerDependencies:
       '@lucide/svelte': '>=0.511.0 <2'
@@ -1000,6 +1000,7 @@ packages:
 
   tldts-core@7.4.20:
     resolution: {integrity: sha512-C630TWXZCZmLq0F2bW4QqwnaaxCQ/svpAqvJwnC4JvgEM5ohhBnGsEzTLSOXcN+xjz+kEaHS5uoWIw2klnqd0A==}
+    deprecated: Partial release, see https://github.com/remusao/tldts/issues/2735. Use >=7.4.22.
 
   tldts@7.4.19:
     resolution: {integrity: sha512-48dH6aSpQnpbzDUc4vIQZ1VjB8tkK+e8c1yx05/SZK+rkssgjEOlxDd/yU8/a4vGYQ9vRgJr9dwMq9TJ0b3X2Q==}
@@ -1360,7 +1361,7 @@ snapshots:
     dependencies:
       svelte: 5.57.3
 
-  '@lyeve-labs/ui-kit@0.60.1(@lucide/svelte@0.511.0(svelte@5.57.3))(svelte@5.57.3)(tailwindcss@4.3.5)':
+  '@lyeve-labs/ui-kit@0.61.0(@lucide/svelte@0.511.0(svelte@5.57.3))(svelte@5.57.3)(tailwindcss@4.3.5)':
     dependencies:
       '@lucide/svelte': 0.511.0(svelte@5.57.3)
       svelte: 5.57.3

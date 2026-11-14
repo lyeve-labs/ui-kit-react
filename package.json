@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@lucide/svelte": "0.511.0",
-    "@lyeve-labs/ui-kit": "0.60.1",
+    "@lyeve-labs/ui-kit": "0.61.0",
     "@sveltejs/vite-plugin-svelte": "^5.1.1",
     "@types/jsdom": "^30.0.0",
     "@types/react": "^19.3.0",
